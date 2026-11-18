@@ -28,13 +28,13 @@
 <body>
 <main>
 <h1>FlightDeck Pilot privacy policy</h1>
-<p><em>Effective date: 16 November 2026 (version 1.3.0). Publisher: Karsten Haldan. Contact: karsten.haldan@gmail.com.</em></p>
+<p><em>Effective date: 18 November 2026 (version 1.8.0). Publisher: Karsten Haldan. Contact: karsten.haldan@gmail.com.</em></p>
 <p>FlightDeck Pilot ("Pilot", "the app") is a personal productivity and wellbeing app for iPhone, Android, Apple Watch and Wear OS. This policy explains which data the app uses, where it is kept, and when anything leaves your phone.</p>
 <h2>Summary</h2>
 <ul>
 <li><strong>Your data stays on your phone.</strong> Plans, habits, goals, focus sessions, journal, food log, fasting, your stack (medications and supplements), health readings and settings are stored only in the app's private storage on your device.</li>
 <li><strong>We do not run a server for the app, and we never receive your data.</strong> We do not sell, rent or share personal data, and we do not use it for advertising.</li>
-<li><strong>No account, no ads, no analytics, no crash reporting, no tracking.</strong></li>
+<li><strong>No account, no analytics, no crash reporting, no tracking.</strong> The free version shows one small, <strong>non-personalised</strong> ad banner on a few list pages (Google AdMob, below); Pilot Pro has no ads. Your health data is never used for ads.</li>
 <li>Data leaves your phone only when <strong>you</strong> start something that needs it: a barcode lookup, a podcast search, your music services, an AI request to the provider you picked, or the optional connection to your own Mac. Each case is listed below.</li>
 </ul>
 <h2>Data on your phone</h2>
@@ -43,7 +43,7 @@
 <tr><td>Journal, mood and energy check-ins</td><td>You</td><td>App storage on the phone</td></tr>
 <tr><td>Food log, water, fasting</td><td>You, and the barcode lookup below</td><td>App storage on the phone</td></tr>
 <tr><td>Your stack: medications, supplements, schedules, doses you marked as taken</td><td>You</td><td>App storage on the phone</td></tr>
-<tr><td>Health readings: sleep, steps, heart rate, resting heart rate, heart rate variability, workouts, mindful minutes</td><td>Health Connect (Android) or Apple Health (iPhone), read-only, only after you allow it</td><td>App storage on the phone</td></tr>
+<tr><td>Health readings: sleep, steps, heart rate, resting heart rate, heart rate variability, workouts, mindful minutes, active and resting energy, respiratory rate, blood oxygen, VO₂ max, wrist or skin temperature during sleep, heart-rate recovery after workouts</td><td>Health Connect (Android) or Apple Health (iPhone), read-only, only after you allow it</td><td>App storage on the phone</td></tr>
 <tr><td>Calendar events</td><td>The calendars on your phone (for example Outlook), read-only, only the calendars you pick</td><td>Read when needed; a short cache on the phone</td></tr>
 <tr><td>Listening history, podcast subscriptions</td><td>You</td><td>App storage on the phone</td></tr>
 <tr><td>Tokens and keys: Spotify sign-in, your AI API keys, an optional calendar ICS link, the Mac pairing token</td><td>You</td><td>The system's secure storage (iOS Keychain, Android Keystore)</td></tr>
@@ -53,7 +53,8 @@
 <p><strong>Device backups:</strong> your phone's own backup (Android Backup / Google One, or iCloud Backup) may include the app's storage, under your account and the platform's encryption. We have no access to it.</p>
 <h2>Health Connect and Apple Health</h2>
 <ul>
-<li>Pilot only <strong>reads</strong> these types: sleep, steps, heart rate, resting heart rate, heart rate variability, exercise (workouts) and mindfulness sessions. It never writes to Health Connect or Apple Health.</li>
+<li>Pilot only <strong>reads</strong> these types: sleep, steps, heart rate, resting heart rate, heart rate variability, exercise (workouts), mindfulness sessions, active and total calories burned, respiratory rate, oxygen saturation, VO₂ max, skin temperature (Apple Watch's sleeping wrist temperature on iPhone) and Apple Watch's heart-rate recovery. On Android it also asks to read data older than 30 days (the history permission), so the year view can show your last twelve months. It never writes to Health Connect or Apple Health.</li>
+<li>Temperature is shown only as each night's deviation from your own baseline, and heart-rate recovery only against your own earlier workouts. Pilot does not interpret either and is not a medical device.</li>
 <li>Health data is used only to show your readings, trends and the daily scores and suggestions in the app.</li>
 <li>Health data is <strong>never</strong> sent to us, never used for advertising, never sold, and never used to train AI models.</li>
 <li>Health data leaves the phone only if you turn on <strong>"Include health data"</strong> for an AI provider and then send a request yourself (see "AI" below). It is off by default.</li>
@@ -72,6 +73,18 @@
 <tr><td>Use "hand-off" to Claude or ChatGPT</td><td>The Claude or ChatGPT app or website</td><td>The prepared prompt, which you see and send yourself</td></tr>
 </tbody></table></div>
 <p>Pilot's AI is off until you turn on a provider. On-device AI (Apple Intelligence on supported iPhones) stays on the phone.</p>
+<h2>Ads in the free version (Google AdMob)</h2>
+<p>From version 1.8.0 the free version shows one small banner at the end of a few list pages (Today, Food, Journal, Recommended). It never appears on health pages, during a workout or focus block, in the walkthrough, on the watches, in widgets or on the lock screen, and never with Pilot Pro.</p>
+<ul>
+<li>The banner comes from <strong>Google AdMob</strong> (Google LLC / Google Ireland Ltd), which has its own privacy policy (policies.google.com/privacy).</li>
+<li>Pilot asks only for <strong>non-personalised ads</strong>. It does not ask for tracking permission (no App Tracking Transparency prompt), does not read the advertising identifier (IDFA), and on Android removes the advertising ID and Privacy Sandbox permissions (ad ID, attribution, interest topics).</li>
+<li><strong>Nothing from Pilot goes into an ad request:</strong> no keywords, no page content, and never health, food, journal, stack, listening or sensor data.</li>
+<li>Google's SDK itself collects, as Google describes it: device and diagnostic information (device model, operating system, app version, crash and performance data), your <strong>IP address</strong> (used to estimate a coarse location and to prevent fraud), and ad interactions (that an ad was shown or tapped).</li>
+<li>In the European Economic Area, the UK and Switzerland, Google's consent form (the User Messaging Platform) asks for your choice before any ad loads. You can change it later from the same form.</li>
+<li>The ads SDK starts only when a page with the banner is shown, never for Pilot Pro.</li>
+</ul>
+<h2>Purchases (Pilot Pro)</h2>
+<p>Pilot Pro (a monthly subscription or a one-time lifetime purchase) is bought through the App Store or Google Play. The store handles payment and your account; Pilot only learns, on your phone, whether Pro is active, and keeps that on the phone. There is no Pilot account and nothing about your purchase is sent to us.</p>
 <h2>Optional: FlightDeck on your own Mac</h2>
 <p>If you use FlightDeck on a Mac, you can pair Pilot with it once (QR code or a short code). Pilot then talks only to the FlightDeck bridge on <strong>your</strong> Mac, over your local network or a private VPN you set up yourself. It shows approvals, projects, usage and message summaries that your Mac sends, and sends your answers and notes back to your Mac. If you choose "AI through your Mac", your question goes to your Mac, which runs your own Claude Code or Codex subscription. None of this passes through a server of ours. Health, food, journal and stack data are not sent to the Mac.</p>
 <h2>Watch apps</h2>
